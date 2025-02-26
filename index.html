@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- add required and recommended <meta> tags -->
+
+<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta name="author" content="Zachary Fraedrich">
+	<meta name="description" content="Limitless Gym contact, information and membership signups">
+	<meta name="keyword" content="Limitless Gym, membership, information, contact, fitness">
+	<meta name="robots" content="index, follow">
+	
+<!-- OPEN GRAPH/SOCIAL MEDIA META TAGS -->
+	<!-- For Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Limitless Gym">
+	<meta name="twitter:description" content="Limitless Gym contact, information and membership signups">
+	<meta name="twitter:image" content="images/classes.jpg">
+
+	<!-- Open Graph -->	
+	<meta property="og:title" content="Limitless Gym">
+	<meta property="og:description" content="Limitless Gym contact, information and membership signups">
+	<meta property="og:image" content="images/classes.jpg">
+	<meta property="og:url" content="limitlessgym.com">
+	<meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+	<script src="javaSriptFile.js" defer></script> 
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="icon" type="image/png" sizes="196x196" href="favicon.png">
+	<link rel="canonical" href="https:www.limitlessfitness.com">
+
+	<link rel="alternate" hreflang="en" href="https:www.limitlessfitness.com/en/">
+	<link rel="alternate" hreflang="es" href="https:www.limitlessfitness.com/es/">
+
+	<title>Limitless Fitness Gym</title>
 
 </head>
 <body>
-<!-- add a skip link that skips to the main content -->
-<!-- add correct heading levels -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
       <path d="M2 12h1"></path>
@@ -20,10 +52,14 @@
     <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#">Join Now</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
+
     
-      src="images/facility.jpg"
+    <picture>
+      <source media="(min-width: 768px) srcset='images/facility-768.jpg'">
+      <source media="(min-width: 320px) srcset='images/facility-320.jpg'">
+      <img src="images/facility.jpg" alt="">
+    </picture>
+      
 
   </header>
   <nav>
@@ -37,7 +73,7 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <main>
+  <main id="main">
     <section>
       <h2>About Us</h2>
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
@@ -61,9 +97,13 @@
         <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
         <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
       </ul>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
+
+      <picture>
+        <source media="(min-width: 768px) srcset='images/facility-768.jpg'">
+        <source media="(min-width: 320px) srcset='images/facility-320.jpg'">
+        <img src="images/classes.jpg" alt="">
+      </picture>
+        
 
     </section>
     <section>
@@ -73,11 +113,14 @@
         Ready for a change?
       </p> 
       <a href="#">Book a Free Consultation today!</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
 
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/dumbells-768w.jpg">
+        <source media="(min-width: 320px)" srcset="images/dumbells-320w.jpg">
+        <img src="images/dumbells.jpg" alt="">
+      </picture>
     </section>
+
     <section>
       <h2>Membership Options</h2>
       <p>At Limitless Fitness, we offer flexible membership plans to suit your needs.</p>
@@ -101,10 +144,10 @@
 
           <label id="memberType">Membership Type</label>
           <select name="memberType" id="memberType" required>
-            <option for="memberType">Select a Membership Option</option>
-            <option for="memberType">Monthly Membership</option>
-            <option for="memberType">Annual Membership</option>
-            <option for="memberType">Family & Group Plans</option>
+            <option for="memberType" value="" disabled>Select a Membership Option</option>
+            <option for="memberType" value="Monthly">Monthly Membership</option>
+            <option for="memberType" value="Annual">Annual Membership</option>
+            <option for="memberType" value="Family">Family & Group Plans</option>
           </select>
 
           <label for="goals">Tell us about your fitness goals:</label><textarea id="goals"> </textarea>
