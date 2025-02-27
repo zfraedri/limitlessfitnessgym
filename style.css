@@ -1,22 +1,75 @@
-/* LETS APPLY WHAT WE KNOW AND MAKE THIS A MOBILE FIRST MINDED DEPLOYMENT
-MOBILE 1 COLUMN FORMAT - MEDIUM 2 COLUMN LAYOUT - LARGE 3 COLUMNS */
+/* CSS RESET TOOL */
 
 
 
-/* FONT FAMILIES */
+/* -------------------------------------------------------------------------------- */
 
-/* COLOR PALETTE */
+/* ROOT - COLOR VARIABLES, FONT STACK*/
 
-/* ROOT */
+:root {
 
-/* MAIN */
+    /* COLOR THEME */
 
-    /* HEADERS */
+    --light-blue: #0D8DFB;
+    --lightest-blue: #2699FB;
+    --blue: #2104D9;
+    --navy: #030A8C;
+    --dark-navy: #020873;
+    --darkest-navy: #020659;
+    --purple: #590242;
+    --white: #FFFFFF;
+    --gray: #c9c9c9;
 
-/* SKIP LINK */
+    /* FONT STACK */
+    --font: Verdana, Geneva, Tahoma, sans-serf;
 
-/* NAV */
+}
 
-/* BODY */
+/* -------------------------------------------------------------------------------- */
 
-/* FOOTER */
+
+
+
+/* BODY STYLES */
+
+/* SKIP LINK STYLE */
+
+/* LINK A STYLES */
+
+/* HEADER STYLES */
+
+/* MENU STYLES */
+
+
+/* TEXT STYLES */
+    /* H1,2,3 STYLES*/
+
+    /* P STYLES */
+
+/* MAIN STYLES */
+
+/* SECTION STYLES */
+
+/* ASIDE STYLES */
+
+/* FORM STYLES */
+
+/* PICTURE STYLES */
+
+/* SVG STYLES */
+
+/* LIST STYLES */
+
+/* FOOTER STYLES */
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* MEDIA QUERIE: MEDIUM SIZED - 2 COLUMN LAYOUT */
+
+
+
+/* MEDIA QUERIE: lARGE SIZED - 3 COLUMN LAYOUT */
