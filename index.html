@@ -4,7 +4,7 @@
 
 <!-- META -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Zachary Fraedrich">
 	<meta name="description" content="Limitless Gym contact, information and membership signups">
 	<meta name="keyword" content="Limitless Gym, membership, information, contact, fitness">
@@ -28,19 +28,19 @@
 	<script src="javaSriptFile.js" defer></script> 
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 	<link rel="icon" type="image/png" sizes="196x196" href="favicon.png">
-	<link rel="canonical" href="https:www.limitlessfitness.com">
+	<link rel="canonical" href="https://www.limitlessfitness.com">
 
-	<link rel="alternate" hreflang="en" href="https:www.limitlessfitness.com/en/">
-	<link rel="alternate" hreflang="es" href="https:www.limitlessfitness.com/es/">
+	<link rel="alternate" hreflang="en" href="https://www.limitlessfitness.com/en/">
+	<link rel="alternate" hreflang="es" href="https://www.limitlessfitness.com/es/">
 
-	<title>Limitless Fitness Gym</title>
+	<title>Limitless Fitness Gym - Premium Memberships & Personal Training</title>
 
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-label="Logo of Limitless Fitness" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
       <path d="M2 12h1"></path>
       <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2"></path>
       <path d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"></path>
@@ -55,9 +55,9 @@
 
     
     <picture>
-      <source media="(min-width: 768px) srcset='images/facility-768.jpg'">
-      <source media="(min-width: 320px) srcset='images/facility-320.jpg'">
-      <img src="images/facility.jpg" alt="">
+      <source media="(min-width: 768px)" srcset="images/facility-768w.jpg">
+      <source media="(min-width: 320px)" srcset="images/facility-320w.jpg">
+      <img src="images/facility.jpg" alt="Black and White image of fitness center. Open and spacious with great natural lighting from windows. Cardio and Weight lifting equipment." style="width:auto;">
     </picture>
       
 
@@ -73,7 +73,7 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <main id="main">
+  <main id="main-content">
     <section>
       <h2>About Us</h2>
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
@@ -99,9 +99,9 @@
       </ul>
 
       <picture>
-        <source media="(min-width: 768px) srcset='images/facility-768.jpg'">
-        <source media="(min-width: 320px) srcset='images/facility-320.jpg'">
-        <img src="images/classes.jpg" alt="">
+        <source media="(min-width: 768px)" srcset="images/classes-768w.jpg">
+        <source media="(min-width: 320px)" srcset="images/classes-320w.jpg">
+        <img src="images/classes.jpg" alt="Black and white image of three people performing weighted workout in class. Two women and one male in synch with each others movements." style="width:auto;">
       </picture>
         
 
@@ -117,7 +117,7 @@
       <picture>
         <source media="(min-width: 768px)" srcset="images/dumbells-768w.jpg">
         <source media="(min-width: 320px)" srcset="images/dumbells-320w.jpg">
-        <img src="images/dumbells.jpg" alt="">
+        <img src="images/dumbells.jpg" alt="Black and white photo of dumbell rack. Many different weighted dumbbells can be seen in the row." style="width:auto;">
       </picture>
     </section>
 
@@ -134,24 +134,24 @@
         <p>Fill out the form below to kickstart your fitness journey:</p>
 
         <form
-          action=""https:wp.zybooks.com/form-viewer.php"
+          action="https:wp.zybooks.com/form-viewer.php"
           method="POST"
           target="_blank"
         >
-          <label for="fullName">Full Name</label><input type="text" id="fullName" placeholder="John Doe" required autofill>
-          <label for="emailForm">Email Address</label><input type="email" id="emailForm" placeholder="you@email.com" required autofill>
-          <label for="phoneNumber">Phone Number</label><input type="tel" id="phoneNumber" placeholder="555-555-5555" required autofill>
+          <label for="fullName">Full Name</label><input type="text" id="fullName" placeholder="John Doe" required autocomplete="on">
+          <label for="emailForm">Email Address</label><input type="email" id="emailForm" placeholder="you@email.com" required autocomplete="on">
+          <label for="phoneNumber">Phone Number</label><input type="tel" id="phoneNumber" placeholder="555-555-5555" required autocomplete="on">
 
-          <label id="memberType">Membership Type</label>
+          <label for="memberType">Membership Type</label>
           <select name="memberType" id="memberType" required>
-            <option for="memberType" value="" disabled>Select a Membership Option</option>
-            <option for="memberType" value="Monthly">Monthly Membership</option>
-            <option for="memberType" value="Annual">Annual Membership</option>
-            <option for="memberType" value="Family">Family & Group Plans</option>
+            <option value="" selected disabled>Select a Membership Option</option>
+            <option value="monthly">Monthly Membership</option>
+            <option value="annual">Annual Membership</option>
+            <option value="family">Family & Group Plans</option>
           </select>
 
           <label for="goals">Tell us about your fitness goals:</label><textarea id="goals"> </textarea>
-          <input type="submit" id="submitBtn">
+          <input type="submit" id="submitBtn" aria-label="Join Limitless Fitness Gym Now">
         </form>
       </section>
     </section>
